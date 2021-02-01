@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client",
+    "e2e"
+  ],
+  "scripts": {
+    "build:client": "yarn workspace node-express-objection-react-boilerplate-client build",
+    "dev": "yarn workspace node-express-objection-react-boilerplate-server dev",
+    "dev:debug": "yarn workspace node-express-objection-react-boilerplate-server dev:debug",
+    "heroku-postbuild": "yarn workspace node-express-objection-react-boilerplate-client build",
+    "start": "yarn workspace node-express-objection-react-boilerplate-server start",
+    "dev:cypress": "yarn workspace node-express-objection-react-boilerplate-server dev:e2e",
+    "e2e:open": "yarn workspace node-express-objection-react-boilerplate-e2e e2e:open",
+    "e2e:run": "yarn workspace node-express-objection-react-boilerplate-e2e e2e:run"
+  },
+  "engines": {
+    "node": "^14.15"
+  }
+}
